@@ -11,11 +11,11 @@ func Test_fuelDistance(t *testing.T) {
 	}{
 		{"Road rest", 10, 20, 200},
 	}
-	for _ ,test:= range tests {
+	for _, test := range tests {
 
-		 got := fuelDistance(test.fuelConsumption);
-			if got != test.want {
-			t.Error("rest road","got:", got, "want",test.want)
+		got := fuelDistance(test.fuelConsumption, test.fuelAvailable)
+		if got != test.want {
+			t.Error("rest road", "got:", got, "want", test.want)
 		}
 
 	}

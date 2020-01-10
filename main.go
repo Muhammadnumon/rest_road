@@ -2,10 +2,8 @@ package main
 
 func main() {
 }
-func fuelDistance(fuelConsumption int) int {
-	const Kilometers = 100
-	fuelConsumption = 10
-	fuelAvailable := 20
-	Distance := (fuelAvailable * Kilometers) / fuelConsumption
-	return Distance
+func fuelDistance(fuelConsumption, fuelAvailable int) int {
+	const kilometers = 100
+	distance := (fuelAvailable * kilometers) / fuelConsumption
+	return distance
 }
